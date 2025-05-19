@@ -1,0 +1,27 @@
+[project]
+name = "workshop-muc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-community",
+    "langchain-text-splitters",
+    "langchain-core",
+    "langchain-nvidia-ai-endpoints",
+    "langchain",
+    "langgraph",
+    "typing-extensions",
+    "ipython",
+    "langchain-openai",
+    "pypdf>=5.4.0",
+    "load_dotenv",
+	"langchain_openai",
+	"langchain_community",
+	"langchain_text_splitters",
+	"langchain_core",
+	"langchain_nvidia_ai_endpoints",
+	"typing_extensions",
+	"langgraph",
+	"IPython"
+]
