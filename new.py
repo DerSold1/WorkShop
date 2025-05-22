@@ -65,7 +65,7 @@ def recognize_speech():
         print(f"Fehler bei der Anfrage an Google Web Speech API: {e}")
 
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = ""
 
 #initialize speech output
 engine = pyttsx3.init()
@@ -73,7 +73,6 @@ engine = pyttsx3.init()
 SPLIT_CHUNK_SIZE = 500
 SPLIT_CHUNK_OVERLAP = 20
 
-#"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"
 os.environ["LANGCHAIN_PROJECT"] = "ProofOfConcept"
 
 class State(TypedDict):
@@ -91,7 +90,7 @@ def generate(state: State):
     response = llm.invoke(messages)
     return {"answer": response.content}
 
-os.environ["NVIDIA_API_KEY"] = OPENAI_API_KEY#"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"
+os.environ["NVIDIA_API_KEY"] = OPENAI_API_KEY
 #os.environ["LANGSMITH_API_KEY"] = getpass.getpass("Enter your LangSmith API key: ")#"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"
 #os.environ["LANGCHAIN_PROJECT"] = "ProofOfConcept"
 #os.environ["LANGCHAIN_TRACING_V2"] = "true"
