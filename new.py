@@ -91,7 +91,7 @@ def generate(state: State):
     return {"answer": response.content}
 
 os.environ["NVIDIA_API_KEY"] = OPENAI_API_KEY
-#os.environ["LANGSMITH_API_KEY"] = getpass.getpass("Enter your LangSmith API key: ")#"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"
+#os.environ["LANGSMITH_API_KEY"] = getpass.getpass("Enter your LangSmith API key: ")
 #os.environ["LANGCHAIN_PROJECT"] = "ProofOfConcept"
 #os.environ["LANGCHAIN_TRACING_V2"] = "true"
 #os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
